@@ -1,4 +1,4 @@
-[<img src="https://avatars0.githubusercontent.com/u/33077825?s=200&v=4"  width="256px" height="256px" align="right" alt="Hackwave Laboratories Workers Cooperative Logo">](https://github.com/hackwave)
+[<img src="https://avatars0.githubusercontent.com/u/33077825?s=200&v=4"  width="128px" height="128px" align="right" alt="Hackwave Laboratories Workers Cooperative Logo">](https://github.com/hackwave)
 
 ## Hackwave Laboratories: Document Generation for operating Workers Cooperative
 **URL** [hackwave.org](https://hackwave.org)
