@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go + WASM + tdewolff/canvas</title>
+    <script src="wasm_exec.js"></script>
+</head>
+<body>
+    <h2>HTML Canvas WASM example using <a href="https://github.com/tdewolff/canvas">tdewolff/canvas</a></h2>
+    <canvas id="canvas">Loading...</canvas>
+
+    <script>
+        const ctx = document.getElementById("canvas").getContext("2d");
+        ctx.font = "20px Arial";
+        ctx.fillText("Loading WASM...", 20, 40);
+
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("lib.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+# Should autogenerate these based off three or 4 colors. Should be able to take
+# logo and just have everything be generated based on that alone preferably.
+#
+# Then we should have a primary and secondary for each major color that matches
+# the scheme. Right now still working on how to hold the color data so there are
+# options; but all the options work and follow color rules. 
+palette:
+  logo:
+    one: "00609B"
+    two: "0092E6"
+    three: "0071B6"
+    four: "3399CC"
+  gray: 
+    primary: "45524D"
+    secondary: "8AA399"
+  dark_blues:
+    primary: "1B1725"
+    secondary: "07141A"
+  yellows:
+    one: "F4E04D"
+    two: "FFC759"
+    three: "EAB464"
+    four: "F4E9CD"
+    five: "F3A712"
+  pinks:
+    one: "EF9CDA"
+    two: "FECEF1"
+    three: "EAC8CA"
+  reds: 
+    one: "DB2B39"
+    two: "5B2333" 
+    three: "FF220C"
+    four: "D33E43"
+  greens:
+    one: "417B5A"
+    two: "4DAA57"
+    mints:
+      one: "84E296"
+      two: "98E2C6"
+  blues:
+    one: "BEE9E8"
+    two: "55DDE0"
+    three: "4EFFEF"
+  purples:
+    one: "E4C1F9"
+    two: "B6A6CA"
+    three: "D5CFE1"
+    four: "E1DEE9"
+  high_contrast:
+    lights: 
+      one: "FDFDFF"
+      two: "FCFFF7"
+      three: "F7F4F3"
+      four: "FBFFF1" 
+      five: "E7DFC6" 
+      six: "E9F1F7" 
+    mids:
+      one: "978897"
+      two: "BBCDE5"
+      three: "A1B0AB"
+      four: "929487"
+      five: "969B90" 
+      six: "9EA9A2"
+    darks:
+      one: "07070A"
+      two: "0A090C" 
+      three: "0A0908" 
