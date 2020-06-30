@@ -140,6 +140,37 @@ body.body-matter > main > section {
   width:100%;
 }
 
+body.body-matter > main > section > inline {
+  max-width:25%;
+  height:25%;
+  display:block;
+}
+
+
+body.body-matter > main > section > inline.left:before{ 
+  clear:float:left;
+}
+
+body.body-matter > main > section > inline.left{
+  clear:left;
+  margin-left:-50%;
+}
+
+body.body-matter > main > section > inline.right{
+  margin-right:75%;
+  float:right;
+}
+
+/*
+body.body-matter > main > section > inline:after { 
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}*/
+
+
 
 body.body-matter > main > section > subheader {
   filter: drop-shadow(0 4mm 2mm rgba(0, 0, 0, 0.2));
