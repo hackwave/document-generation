@@ -2,8 +2,41 @@
 <html lang='en'>
   <head>
     <meta charset="utf-8">
-    <title>Hackwave Document Cover</title>
+    <title>Hackwave Laboratories: Action Plan - Page 6</title>
     <style> 
+blockquote {
+color: #0071B6;
+border-left: 15px solid #00609B;
+padding-left:25px;
+margin-left:25px;
+margin-bottom:100px;
+}
+
+blockquote > span.author {
+ color:#978897;
+ margin-top:25px;
+ margin-bottom:25px;
+ float:right;
+ right:5px;
+
+}
+
+blockquote > span.author a {
+	color: #978897;
+}
+blockquote > span.author a:visited {
+	color: #978897;
+}
+
+a {
+	text-decoration:none;
+	color: #0071B6;
+}
+a:visited {
+	text-decoration:none;
+	color: #00609B;
+}
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -31,30 +64,42 @@
     </style>
   </head>
   <body style="margin-top:0px;margin-left:0px;margin-right:0px;max-width:100%;overflow-x:hidden;overflow-y:hidden;border">  
-	<div style="width:100%;min-height:90%;height:1500px;margin-top:32px;background-color:#FDFDFF;"> 
-	<div style="column-count: 2;column-gap:80px;margin-left:64px;margin-right:64px;text-align:justify;font-family:Roboto;font-size:18px;line-height:44px;padding-top:34px;padding-bottom:84px;max-height:1450px;min-height:1400px;">
+	<div style="width:100%;min-height:90%;height:1400px;margin-top:32px;background-color:#FDFDFF;"> 
+	<div style="column-count: 2;column-gap:80px;margin-left:64px;margin-right:64px;text-align:justify;font-family:Roboto;font-size:24px;line-height:44px;padding-top:34px;padding-bottom:84px;max-height:1350px;min-height:1300px;">
 
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat ut orci quis aliquet. Mauris lacus urna, hendrerit nec lacinia vel, interdum eu libero. Praesent at ipsum ac lorem auctor sagittis et id risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut feugiat convallis neque id fringilla. Pellentesque sit amet consectetur lacus. Vestibulum at diam sed ipsum tincidunt ultricies. Ut cursus lectus eu ante tristique, ac maximus nunc porta. Etiam eu elit elit.</p>
+		<p>The forums functioning as both as a knowledge-base, and a way to drive traffic, and market your law firm through a internet presence that offers more than a business-card, are the foundation.</p> 
+		<p>An important benefit from OAuth2 account systems besides the low-barrier of enry, ensures the accounts are not regular throw-aways. When verifying a user through OAuth2 accounts already created on Google, Facebook, and Twiter; they are already vettted, and will most likely be legimtiate users, with real emails already confirmed by these services. These ensure that many of these accounts will be ready to use as customer accounts in a payment system too.</p> 
 
 
 		<div style="width:100%;border-top:3px solid #0071B6;margin-top:125px;"></div>
+		<h2 style="font-weight:100;color:#0071B6;">Customer Relationship Management (CRM)</h2>
 
-		<h2 style="font-weight:100;color:#0071B6;">Subsection about this</h2>
+		<p>Another benefit of using a full web application over the static web page is the account system can easily be turned into a <a href="https://en.wikipedia.org/wiki/Customer_relationship_management">customer relationship management (CRM)</a> system.</p>
 
+		<blockquote class="blockquote">"Customer relationship management (CRM) is an approach to managing a company's interaction with current and potential customers. It uses data analysis about customers' history with a company to improve business relationships with customers, specifically focusing on customer retention and ultimately driving sales growth."<br/> <span class="author"><a href="https://en.wikipedia.org/wiki/Customer_relationship_management">Wikipedia CRM Article</a></span></blockquote>
 
+		<p>Since these accounts are already vetted, most of them will be reliable for a client management system. And so we can also support accepting payments through the web application, and offer services directly through the web application. This could be a store-like presentation where potential clients can "purchase" services, either a down-payment to start the client relationship, with further invocing entered into the system manually, and allowing the customers to pay over time, this even makes possible payment plans.</p> 
+		<p>But this could be a full client management system tracking all clients, at every stage of the process, and storing all relevant information, and handling payments.</p> 
+		<p>Start from tracking potential client leads, tracking all active clients and have a system to track and monitor the stage of their cases, and store information about previous clients after scrubbing all sensitive data.</p> 
+		<p><strong>Hackwave Laboratories always takes a security first approach to our design, and we would avoid storing any unncessary personal information about clients, keep all data encrypted when at rest, and the ssystem would run in a secure environment we setup that would make database leaks as unlikely as possible, and if ever they occur, leaking as little information as possible, by keeping all data encrypted unless the account is acively being used which is dramaticlaly different than how many other web applications are built.</strong></p>
 
-		<p>Curabitur aliquet accumsan lacus, id bibendum leo posuere volutpat. Suspendisse iaculis lectus eu malesuada volutpat. Nullam fringilla rutrum ligula, eget mollis metus porta in. Aliquam erat volutpat. Quisque non tincidunt dolor. Duis non pharetra ex, sit amet tempus felis. Proin sit amet magna a dui facilisis mollis ut nec tellus.</p>
+		<p>Using a simple service like <a href="https://stripe.com">Stripe Payments</a> you can take credit cards for roughly 3% fees, which overall are reasonable, and their system is very easy to intergrate and use. But this service only works within the US. If your service expands into latin america, we can switch to something like <a href="https://braintreepayments.com">Braintree Payments</a>.</p> 
+		<p>We recommend adding <a href="https://venmo.com">Venmo Payments</a>, a service that is growing in popularity,and so it would be worth adding support, which would be very easy to do. And we can add support for the older payment services like <a href="https://paypal.com">Paypal</a>. Eventually we can even add Bitcoin. 
 
-		<p>In sollicitudin, felis id euismod efficitur, est nulla placerat sem, nec placerat nisl diam vitae eros. Phasellus posuere risus non neque tincidunt, ac ornare sem maximus. Donec in enim a velit elementum ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam vitae velit consectetur, ullamcorper lorem at, suscipit justo. Vestibulum ornare mollis nulla, eget posuere eros molestie quis. Ut ac odio posuere, aliquet felis vel, pretium tellus. Maecenas nec efficitur lectus. Vestibulum luctus justo et hendrerit lobortis. Mauris dictum faucibus augue at varius. Mauris ultricies vehicula vulputate. Donec a nunc nec massa hendrerit efficitur id eu velit. Pellentesque molestie metus nec dolor convallis, at elementum urna pretium. Nunc id tincidunt lacus.</p>
+<img style="float:right;padding-left:55px;padding-top:25px;padding-bottom:25px;outside-shadpe:circle;" src="data:image/jpeg;base64,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">
+</p> 
 
-		<p>Duis fermentum lectus non blandit commodo. Suspendisse tellus urna, viverra malesuada tincidunt sed, volutpat sed lorem. In scelerisque at tortor nec blandit. Nullam dignissim gravida tortor vel accumsan. Proin commodo elementum erat, gravida pharetra erat vehicula id. Etiam hendrerit dolor vel volutpat iaculis. Sed sit amet sodales mi. Mauris elit arcu, finibus vel interdum at, aliquam sit amet libero. Nullam vitae egestas ante, sed commodo tortor. Nullam et augue quis nisl placerat scelerisque.</p>
+		<div style="width:100%;border-top:3px solid #0071B6;margin-top:125px;"></div>
+		<h2 style="font-weight:100;color:#0071B6;">Accepting cryptocurrency?</h2>
 
-		<p>Mauris vel feugiat ipsum. Curabitur efficitur consequat euismod. In aliquet mi sed purus gravida, nec lobortis nibh sagittis. In vestibulum tincidunt magna. Duis imperdiet diam sed ante mattis, at consequat tellus faucibus. Maecenas ut cursus tellus. Aliquam malesuada sed ex pulvinar tempus. Sed id sem non felis dignissim tempor. Quisque non dolor et odio dignissim faucibus. Vivamus sit amet sodales mauris, vitae mollis urna. Nullam congue turpis et elit facilisis, in mattis leo lobortis. Sed quis congue velit. Pellentesque velit massa, porta eget mattis eu, placerat non lacus. Donec facilisis felis non purus efficitur, a eleifend elit efficitur.</p>
+<p>However, for the case of Bitcoin, you will find the best solution will be to simply just state on the site you accept Bitcoin. Then if anyone actually decides to pay in Bitcoin, you can just handle it manually. It will likely be rare, and can do it by a case-by-case basis; because the entire point is there is no need for middlemen, and peope using it will appreciate that. If you do end getting regular business in Bitcoin, we can then setup a system for accepting it; its very easy to do and can be done so that its direct, and there are zero fees for that payment method.
+</p>
 
-		<p>Integer blandit aliquam nisl a ornare. Morbi rhoncus massa vitae tincidunt vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam et consequat justo. Integer imperdiet nisl vel justo eleifend, vitae commodo tortor placerat. Integer ut eros augue. Mauris vitae ante sed lectus tincidunt sodales at ut metus. Fusce rutrum tempor blandit. Aenean massa ante, pharetra id suscipit in, cursus sit amet enim. Aenean malesuada, magna ac varius mollis, nisi sem pretium ante, sit amet auctor ligula metus sed libero. Aliquam tincidunt nunc ut libero bibendum, sed feugiat libero accumsan.</p>
+<p> 
 
-		<p>Mauris eu eros mauris. Nunc pharetra, mauris vitae molestie iaculis, eros lectus porta nisi, at blandit ligula velit commodo sem. Phasellus ut rhoncus ex. Cras maximus nibh vestibulum odio rutrum, bibendum finibus nisi congue. Phasellus semper elit quis vulputate accumsan. Suspendisse potenti. Aliquam at magna quis odio fermentum pretium eget ac tortor. Pellentesque a odio ex. Ut purus est, hendrerit eu odio in, sollicitudin fermentum nisl. Integer dictum lacus sit amet est venenatis tincidunt. Curabitur vitae vehicula erat. Vivamus non arcu id justo congue gravida. Phasellus vitae sem sit amet lacus venenatis dapibus ut id diam. Nullam luctus vulputate nibh sodales tempus.</p>
+</p>
+		
+
 
 	</div>
 
@@ -63,7 +108,7 @@
         <div style="width:100%; border-top:3px solid #0071B6;">
         	<h4 style="margin-top:13px;width:600px;float:left;font-weight:100;margin-left:-150px;font-family:Roboto;"><span style="font-weight:600;font-size:18px;line-height:4px;color:#0071B6;">Hackwave Laboratories</span> <span style="padding-left:8px;color:#0071B6;">Action Plan</span></h4>
         
-        <h4 style="margin-top:6px;float:left;width:200px;font-family:Roboto;font-size:16px;float:right;font-weight:100;font-size:18px;color:#FDFDFF;margin-right:-20px;"><span style="font-weight:600;color:#0071B6;">Section 1</span><span style="color:#0071B6;padding-left:10px;">Page 1</span></h4>
+        <h4 style="margin-top:6px;float:left;width:200px;font-family:Roboto;font-size:16px;float:right;font-weight:100;font-size:18px;color:#FDFDFF;margin-right:-20px;"><span style="font-weight:600;color:#0071B6;">Section 1</span><span style="color:#0071B6;padding-left:10px;">Page 7</span></h4>
         </center>
       </div>
     </div>
