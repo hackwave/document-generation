@@ -21,12 +21,12 @@
 /*  A Paper Sizes in Pixels - Low Resolutions                                */
 /*  .______________________________________________.                         */
 /*  |          |                  |                |                         */
-/*  |   Size   |    72 PPI 	  |   300 PPI      |                             */
+/*  |   Size   |    72 PPI 	      |   300 PPI      |                         */
 /*  |==========|==================|================|                         */
 /*  |   A2     |    1191 x 1684   |   4960 x 7016  |                         */           
 /*  |   A3     |    842 x 1191	  |   3508 x 4960  |                         */
-/*  |   A4     |    595 x 842	  |   2480 x 3508  |                           */
-/*  |   A5     |    420 x 595	  |   1748 x 2480  |                           */
+/*  |   A4     |    595 x 842	    |   2480 x 3508  |                         */
+/*  |   A5     |    420 x 595	    |   1748 x 2480  |                         */
 /*  |          |                  |                |                         */
 /*  '----------'------------------'----------------'                         */
 /*                                                                           */
@@ -51,6 +51,10 @@ a {
 a:visited {
 	text-decoration:none;
 	color: #00609B;
+}
+
+.drop-shadow{ 
+  filter: drop-shadow(0 4mm 4mm rgba(0, 0, 0, 0.3));
 }
 
 /*****************************************************************************/
@@ -86,30 +90,33 @@ body.section {
 /*****************************************************************************/
 body.body-matter {
   background-color:#FDFDFF;
+  font-family:Roboto;
 }
 
 body.body-matter > main {
   column-count:2;
   column-gap:80px;
   text-align:justify;
-  font-family:Roboto;
   font-size:24px;
   line-height:44px;
   padding: 32px 96px 64px 96px;
+  min-height:1080px;
+  max-height:3000px;
 }
 
 body.body-matter > header { 
   padding:16px;
   width:100%;
   color:#FDFDFF;
-  font-family: Roboto;
   float:left;
   background-color:#0071B6;
   text-align:right;
+  filter: drop-shadow(0mm 2mm 2mm rgba(0, 0, 0, 0.2));
+  border-bottom: 10px solid #3399CC;
 }
 
 body.body-matter > header > info {
-  font-size:20px;
+  font-size:25px;
   padding-right:106px;
   font-weight:100;
   padding-left:20px;
@@ -117,6 +124,7 @@ body.body-matter > header > info {
 
 body.body-matter > header > info > span {
   padding-right:8px;
+  filter: drop-shadow(0mm 2mm 4mm rgba(0, 0, 0, 0.9));
 }
 
 body.body-matter > header > info > span.broad-info {
@@ -128,12 +136,30 @@ body.body-matter > header > info > span.seperator {
   font-size:5px;
 }
 
-body.body-matter > main > section > subheader i {
-	padding-right:8px;
-}
-
 body.body-matter > main > section {
   width:100%;
+}
+
+
+body.body-matter > main > section > subheader {
+  filter: drop-shadow(0 4mm 2mm rgba(0, 0, 0, 0.2));
+}
+
+body.body-matter > main > section > subheader > i {
+	padding-right:12px;
+  font-size:80px;
+  float:left;
+}
+
+body.body-matter > main > section > subheader > subtitle {
+  float:right;
+  padding-top:4px;
+  padding-botom:0px;
+  margin-bottom:-8px;
+  font-size: 22px;
+	/*color:#8192A5; /* Light Slate Gray */
+  color: #45524D;
+
 }
 
 body.body-matter > main > section > subheader {
@@ -179,7 +205,6 @@ body.body-matter > footer {
 }
 body.body-matter > footer > info {
   width:33.3%;
-  font-family:Roboto;
   color:#0071B6;
   padding: 32px 40px 24px 40px;
   font-size:24px;
