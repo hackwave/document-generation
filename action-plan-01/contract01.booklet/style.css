@@ -57,6 +57,26 @@ a:visited {
   filter: drop-shadow(0 4mm 4mm rgba(0, 0, 0, 0.3));
 }
 
+code {
+  filter: drop-shadow(0mm 2mm 2mm rgba(0, 0, 0, 0.2));
+  white-space: pre-wrap;
+  border: 2px solid #3399CC;
+  border-radius:2px;
+  background: #f4f4f4;
+  border-top: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-left: 8px solid #0092E6;
+  color: #666;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 1.6;
+  padding:16px 16px 16px 8px;
+  display: inline-table;
+  width:100%;
+}
+
+
 /*****************************************************************************/
 /* Cover Styling                                                       */
 /*****************************************************************************/
