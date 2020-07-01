@@ -82,40 +82,46 @@ code {
 /*****************************************************************************/
 body.cover {
 	background-color:#3399CC;
+  height:4%;margin-top:13%;width:100%;z-index:9;float:right;display:inline-block;position:fixed;
 }
 
 /*****************************************************************************/
 /* Font Matter Styling                                                       */
 /*****************************************************************************/
-body.front {
-  background-color:#FDFDFF;
+body.front-pages {
+  background-color:#3399CC;
   font-family:Roboto;
 
 }
 
-body.front > title {
+body.front-pages > page.title {
   
+}
+
+body.front-pages > page > organization {
+      margin-left:32%;margin-top:15%;float:left;z-index:999;color:#000;
+  font-size:64px;width:700px;color:#1B1725;margin-left:-150px;margin-top:-120px;margin-bottom:-50px
 }
 
 
 /*****************************************************************************/
 /* Back Matter Styling                                                       */
 /*****************************************************************************/
-body.backtter {
+body.back-pages {
 	background-color:#0071B6;
 }
 
 /*****************************************************************************/
-/* Section Insert Styling                                                       */
+/* Chapter Insert Styling                                                       */
 /*****************************************************************************/
-body.section {
+body.chapter-page {
 	background-color:#0071B6;
 }
 
 /*****************************************************************************/
 /* Body Matter Styling                                                       */
 /*****************************************************************************/
-body.body-matter {
+body.primary-pages {
   background-color:#FDFDFF;
   font-family:Roboto;
 }
