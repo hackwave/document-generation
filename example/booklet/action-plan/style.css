@@ -88,8 +88,15 @@ body.cover {
 /* Font Matter Styling                                                       */
 /*****************************************************************************/
 body.front-matter {
-	background-color:#0071B6;
+  background-color:#FDFDFF;
+  font-family:Roboto;
+
 }
+
+body.front-matter > title {
+  
+}
+
 
 /*****************************************************************************/
 /* Back Matter Styling                                                       */
@@ -189,8 +196,6 @@ body.body-matter > main > section > inline:after {
   height: 0;
   clear: both;
 }*/
-
-
 
 body.body-matter > main > section > subheader {
   filter: drop-shadow(0 4mm 2mm rgba(0, 0, 0, 0.2));
