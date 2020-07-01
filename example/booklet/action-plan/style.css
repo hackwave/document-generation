@@ -87,13 +87,13 @@ body.cover {
 /*****************************************************************************/
 /* Font Matter Styling                                                       */
 /*****************************************************************************/
-body.front-matter {
+body.front {
   background-color:#FDFDFF;
   font-family:Roboto;
 
 }
 
-body.front-matter > title {
+body.front > title {
   
 }
 
@@ -101,7 +101,7 @@ body.front-matter > title {
 /*****************************************************************************/
 /* Back Matter Styling                                                       */
 /*****************************************************************************/
-body.back-matter {
+body.backtter {
 	background-color:#0071B6;
 }
 

@@ -4,6 +4,44 @@ learn what is inside the box, so we can use similar ontology, and learn from
 what they discovered. Then if we need extended or extra features, we add onto
 it. Lets not just start from nothing. 
 
+### Glossary of terms 
+Preflight - Appears to be something to do with getting ready for print 
+________________________________________________________________________________
+### Scribus 
+Single Page vs. Facing Pages 
+
+Columns 
+  * Number
+  * Gap 
+
+Master page
+
+Barcodes (Very rich barcode library!)
+  * Type 
+    * Point of sale
+    * Supply Chain 
+      * ITF-14
+      * SSCC-18
+    * 2D Symbols
+    * 1D smbols
+    * GS1
+    * Postal 
+    * Pharm
+    * Less used 
+    * GS1 Composites 
+
+
+Size: 
+  * A4
+  * Letter 
+    8.5 in width
+    11 in height 
+  * Custom
+
+Orientation
+  * Landscape
+  * Portrait 
+
 
 ### LibreOffice Associated 
 https://www.documentliberation.org/contribute/
