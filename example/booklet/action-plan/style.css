@@ -71,7 +71,7 @@ code {
   font-family: monospace;
   font-size: 18px;
   line-height: 1.6;
-  padding:16px 16px 16px 8px;
+  padding:0px 16px 6px 26px;
   display: inline-table;
   width:100%;
 }
@@ -80,7 +80,7 @@ code {
 /*****************************************************************************/
 /* Cover Styling                                                       */
 /*****************************************************************************/
-body.cover {
+body#cover {
 	background-color:#3399CC;
   height:4%;margin-top:13%;width:100%;z-index:9;float:right;display:inline-block;position:fixed;
 }
@@ -88,17 +88,17 @@ body.cover {
 /*****************************************************************************/
 /* Font Matter Styling                                                       */
 /*****************************************************************************/
-body.front-pages {
+body#front-page {
   background-color:#3399CC;
   font-family:Roboto;
 
 }
 
-body.front-pages > page.title {
+body#front-page > page#title {
   
 }
 
-body.front-pages > page > organization {
+body#front-page > page#title > organization {
       margin-left:32%;margin-top:15%;float:left;z-index:999;color:#000;
   font-size:64px;width:700px;color:#1B1725;margin-left:-150px;margin-top:-120px;margin-bottom:-50px
 }
@@ -107,26 +107,27 @@ body.front-pages > page > organization {
 /*****************************************************************************/
 /* Back Matter Styling                                                       */
 /*****************************************************************************/
-body.back-pages {
+body#back-page {
 	background-color:#0071B6;
 }
 
 /*****************************************************************************/
 /* Chapter Insert Styling                                                       */
 /*****************************************************************************/
-body.chapter-page {
+body#chapter-page {
 	background-color:#0071B6;
+  margin-top:0px;margin-left:0px;margin-right:0px;background-color:#3399CC;max-width:100%;overflow-x:hidden;overflow-y:hidden;
 }
 
 /*****************************************************************************/
 /* Body Matter Styling                                                       */
 /*****************************************************************************/
-body.primary-pages {
+body#content-page {
   background-color:#FDFDFF;
   font-family:Roboto;
 }
 
-body.body-matter > main {
+body#content-page > main {
   column-count:2;
   column-gap:80px;
   text-align:justify;
@@ -137,7 +138,7 @@ body.body-matter > main {
   max-height:3000px;
 }
 
-body.body-matter > header { 
+body#content-page > header { 
   padding:16px;
   width:100%;
   color:#FDFDFF;
@@ -148,54 +149,54 @@ body.body-matter > header {
   border-bottom: 10px solid #3399CC;
 }
 
-body.body-matter > header > info {
+body#content-page > header > info {
   font-size:25px;
   padding-right:106px;
   font-weight:100;
   padding-left:20px;
 }
 
-body.body-matter > header > info > span {
+body#content-page > header > info > span {
   padding-right:8px;
   filter: drop-shadow(0mm 2mm 4mm rgba(0, 0, 0, 0.9));
 }
 
-body.body-matter > header > info > span.broad-info {
+body#content-page > header > info > span.broad-info {
   font-size:24px;
   font-weight:400;
 }
 
-body.body-matter > header > info > span.seperator {
+body#content-page > header > info > span.seperator {
   font-size:5px;
 }
 
-body.body-matter > main > section {
+body#content-page > main > section {
   width:100%;
 }
 
-body.body-matter > main > section > inline {
+body#content-page > main > section > inline {
   max-width:25%;
   height:25%;
   display:block;
 }
 
 
-body.body-matter > main > section > inline.left:before{ 
+body#content-page > main > section > inline.left:before{ 
   clear:float:left;
 }
 
-body.body-matter > main > section > inline.left{
+body#content-page > main > section > inline.left{
   clear:left;
   margin-left:-50%;
 }
 
-body.body-matter > main > section > inline.right{
+body#content-page > main > section > inline.right{
   margin-right:75%;
   float:right;
 }
 
 /*
-body.body-matter > main > section > inline:after { 
+body#content-page > main > section > inline:after { 
   content: "";
   visibility: hidden;
   display: block;
@@ -203,17 +204,17 @@ body.body-matter > main > section > inline:after {
   clear: both;
 }*/
 
-body.body-matter > main > section > subheader {
+body#content-page > main > section > subheader {
   filter: drop-shadow(0 4mm 2mm rgba(0, 0, 0, 0.2));
 }
 
-body.body-matter > main > section > subheader > i {
+body#content-page > main > section > subheader > i {
 	padding-right:12px;
   font-size:80px;
   float:left;
 }
 
-body.body-matter > main > section > subheader > subtitle {
+body#content-page > main > section > subheader > subtitle {
   float:right;
   padding-top:4px;
   padding-botom:0px;
@@ -224,7 +225,7 @@ body.body-matter > main > section > subheader > subtitle {
 
 }
 
-body.body-matter > main > section > subheader {
+body#content-page > main > section > subheader {
 	border-bottom:3px solid #0071B6;
 	font-weight:100;
 	color:#0071B6;
@@ -237,7 +238,7 @@ body.body-matter > main > section > subheader {
 	font-size:42px;
 }
 
-body.body-matter > main > section > blockquote {
+body#content-page > main > section > blockquote {
 	color: #0071B6;
 	border-left: 15px solid #00609B;
 	padding-left:25px;
@@ -245,7 +246,7 @@ body.body-matter > main > section > blockquote {
 	margin-bottom:100px;
 }
 
-body.body-matter > main > section > blockquote > author {
+body#content-page > main > section > blockquote > author {
 	color:#978897;
 	margin-top:25px;
 	margin-bottom:25px;
@@ -253,32 +254,33 @@ body.body-matter > main > section > blockquote > author {
 	right:5px;
 }
 
-body.body-matter > main > section > blockquote > author a {
+body#content-page > main > section > blockquote > author a {
 	color: #978897;
 }
 
-body.body-matter > main > section > blockquote > author a:visited {
+body#content-page > main > section > blockquote > author a:visited {
 	color: #978897;
 }
 
-body.body-matter > footer {
+body#content-page > footer {
   width:100%; 
   border-top:2px solid #0071B6;
 }
-body.body-matter > footer > info {
+body#content-page > footer > info {
   width:33.3%;
   color:#0071B6;
   padding: 32px 40px 24px 40px;
   font-size:24px;
   font-weight:100;
 }
-body.body-matter > footer > info.document-type {
-  float:left;text-align:left;
+body#content-page > footer > info.document-type {
+  float:left;
+  text-align:left;
 }
-body.body-matter > footer > info.document-location {
+body#content-page > footer > info.document-location {
   float:right;text-align:right;
 }
-body.body-matter > footer > info > span.broad-info {
+body#content-page > footer > info > span.broad-info {
   font-weight:600;padding-right:6px;
 }
 
