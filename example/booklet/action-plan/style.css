@@ -40,14 +40,12 @@ body {
 	margin:0px;
 	max-width:1240px;
 	max-width:1754px;
+	min-width:1240px;
+	min-width:1754px;
 	overflow-x:hidden;
 	overflow-y:hidden;
   width:100%;
-  max-width:100%;
-  min-width:100%;
   height:100%;
-  max-height:100%;
-  min-height:100%;
 }
 
 /* As of Unicode 11 - html entity: &#127279; or &#x1f12f; */
