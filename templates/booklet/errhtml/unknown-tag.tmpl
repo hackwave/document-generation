@@ -1,0 +1,21 @@
+<div class="error">
+  <div class="error-message">reference to unknown tag: <code>{{.TagName}}</code></div>
+
+  <div class="code-location">
+    {{.ErrorLocation | annotate}}
+  </div>
+
+  {{if .SimilarTags}}
+  <p>These tags seem similar:</p>
+
+  <ul>
+  {{range .SimilarTags}}
+    <li><p><code>{{.Name}}</code></p></li>
+  {{end}}
+  </ul>
+
+  <p>Did you mean one of these?</p>
+  {{else}}
+  <p>I couldn't find any similar tags. :(</p>
+  {{end}}
+</div>

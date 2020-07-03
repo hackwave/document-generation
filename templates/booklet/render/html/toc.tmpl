@@ -1,0 +1,13 @@
+{{if and .Children (not .OmitChildrenFromTableOfContents)}}
+<nav>
+  <ul>
+  {{range .Children}}
+    <li>
+      <a href="{{.PrimaryTag | url}}">{{.Number}} {{.Title | stripAux | render}}</a>
+
+      {{template "toc.tmpl" .}}
+    </li>
+  {{end}}
+  </ul>
+</nav>
+{{end}}
