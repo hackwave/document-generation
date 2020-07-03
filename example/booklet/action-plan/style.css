@@ -1,38 +1,38 @@
-/*****************************************************************************/
-/* Hackwave Document Generation CSS: Booklet                                 */ 
-/*****************************************************************************/
-/* This is the CSS used to generate a booklet, this is the first template    */
-/* is primarily being generated for the purpose of having an example to work */
-/* with to write Go code that will generate booklets and other documents for */
-/* running Hackwave Laboratories from our preferred note taking format which */
-/* is markdown. We will likely even implement a custom markdown plugin set   */
-/* so that we can fully contorl the generation of documents from markdown    */ 
-/* and have very little to no alterations after generation from markdown     */
-/*                                                                           */
-/* The strategy for CSS will be to always just override the base elements    */
-/* to avoid having to add any classes. This makes a cleaner document, that   */ 
-/* will eventually be exclusively *.epub and *.pdf documents for public      */
-/* consumption.                                                              */
-/*                                                                           */
-/* The stylesheet should be programmatically generated too based on the      */
-/* palette and other details defined in the Go and likely YAML configuration.*/
-/*                                                                           */
-/*                                                                           */
-/*  A Paper Sizes in Pixels - Low Resolutions                                */
-/*  .______________________________________________.                         */
-/*  |          |                  |                |                         */
-/*  |   Size   |    72 PPI 	      |   300 PPI      |                         */
-/*  |==========|==================|================|                         */
-/*  |   A2     |    1191 x 1684   |   4960 x 7016  |                         */           
-/*  |   A3     |    842 x 1191	  |   3508 x 4960  |                         */
-/*  |   A4     |    595 x 842	    |   2480 x 3508  |                         */
-/*  |   A5     |    420 x 595	    |   1748 x 2480  |                         */
-/*  |          |                  |                |                         */
-/*  '----------'------------------'----------------'                         */
-/*                                                                           */
-/*****************************************************************************/
-/* Generic CSS Style For All                                                 */
-/*****************************************************************************/
+/******************************************************************************/
+/* Hackwave Document Generation CSS: Booklet                                  */ 
+/******************************************************************************/
+/* This is the CSS used to generate a booklet, this is the first template     */
+/* is primarily being generated for the purpose of having an example to work  */
+/* with to write Go code that will generate booklets and other documents for  */
+/* running Hackwave Laboratories from our preferred note taking format which  */
+/* is markdown. We will likely even implement a custom markdown plugin set    */
+/* so that we can fully contorl the generation of documents from markdown     */ 
+/* and have very little to no alterations after generation from markdown      */
+/*                                                                            */
+/* The strategy for CSS will be to always just override the base elements     */
+/* to avoid having to add any classes. This makes a cleaner document, that    */ 
+/* will eventually be exclusively *.epub and *.pdf documents for public       */
+/* consumption.                                                               */
+/*                                                                            */
+/* The stylesheet should be programmatically generated too based on the       */
+/* palette and other details defined in the Go and likely YAML configuration. */
+/*                                                                            */
+/*                                                                            */
+/*  A Paper Sizes in Pixels - Low Resolutions                                 */
+/*  .--------.---------------.-------------.----------------.                  */
+/*  |        |               |             |                |                  */
+/*  |  Size  |  72 DPI	     |  150 DPI    |   300 DPI      |                  */
+/*  |========|===============|=============|================|                  */
+/*  |  A2    |  1191 x 1684  |  2480x3508  |   4960 x 7016  |                  */           
+/*  |  A3    |  842 x 1191   |  1754x2480  |   3508 x 4960  |                  */
+/*  |  A4    |  595 x 842	   |  1240x1754  |   2480 x 3508  |                  */
+/*  |  A5    |  420 x 595	   |  874x1240   |   1748 x 2480  |                  */
+/*  |        |               |             |                |                  */
+/*  '--------'---------------'-------------'----------------'                  */
+/*                                                                            */
+/******************************************************************************/
+/* Generic CSS Style For All                                                  */
+/******************************************************************************/
 body {
 	margin-top:0px;
 	margin-left:0px;
@@ -42,6 +42,19 @@ body {
 	overflow-x:hidden;
 	overflow-y:hidden;
 }
+
+/* As of Unicode 11 - html entity: &#127279; or &#x1f12f; */
+copyleft:before {
+  content: "©";
+}
+copyleft {
+  font-weight:100;
+  opacity:0.7;
+  vertical-align:middle;
+  display:inline-block;
+  transform: rotate(180deg);
+}
+
 
 a {
 	text-decoration:none;
@@ -78,12 +91,10 @@ code {
 
 
 /*****************************************************************************/
-/* Cover Styling                                                       */
+/* Cover Styling                                                             */
 /*****************************************************************************/
 body#cover {
 	background-color:#3399CC;
-  min-height:100%;
-  min-width:100%;
   font-family:Roboto;
 }
 
