@@ -51,8 +51,9 @@ body {
 }
 
 /* As of Unicode 11 - html entity: &#127279; or &#x1f12f; */
-copyleft:before {
+copyleft::before {
   content: "©";
+  
 }
 
 copyleft {
