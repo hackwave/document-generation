@@ -1,13 +1,14 @@
 /******************************************************************************/
 /* Hackwave Document Generation CSS: Booklet                                  */ 
 /******************************************************************************/
+/*                                                                            */
 /* This is the CSS used to generate a booklet, this is the first template     */
 /* is primarily being generated for the purpose of having an example to work  */
 /* with to write Go code that will generate booklets and other documents for  */
 /* running Hackwave Laboratories from our preferred note taking format which  */
 /* is markdown. We will likely even implement a custom markdown plugin set    */
 /* so that we can fully contorl the generation of documents from markdown     */ 
-/* and have very little to no alterations after generation from markdown      */
+/* and have very little to no alterations after generation from markdown.     */
 /*                                                                            */
 /* The strategy for CSS will be to always just override the base elements     */
 /* to avoid having to add any classes. This makes a cleaner document, that    */ 
@@ -18,35 +19,42 @@
 /* palette and other details defined in the Go and likely YAML configuration. */
 /*                                                                            */
 /*                                                                            */
-/*  A Paper Sizes in Pixels - Low Resolutions                                 */
-/*  .--------.---------------.-------------.----------------.                  */
-/*  |        |               |             |                |                  */
-/*  |  Size  |  72 DPI	     |  150 DPI    |   300 DPI      |                  */
-/*  |========|===============|=============|================|                  */
-/*  |  A2    |  1191 x 1684  |  2480x3508  |   4960 x 7016  |                  */           
-/*  |  A3    |  842 x 1191   |  1754x2480  |   3508 x 4960  |                  */
-/*  |  A4    |  595 x 842	   |  1240x1754  |   2480 x 3508  |                  */
-/*  |  A5    |  420 x 595	   |  874x1240   |   1748 x 2480  |                  */
-/*  |        |               |             |                |                  */
-/*  '--------'---------------'-------------'----------------'                  */
+/*     A Paper Sizes in Pixels - Low Resolutions                              */
+/*    .========.===============.=============.=============.===============.  */
+/*    |        |               |             |             |               |  */
+/*    |  PAGE  |  72 DPI	     |  96 DPI     |  150 DPI    |  300 DPI      |  */
+/*    |========+===============+=============+=============+===============|  */
+/*    |  A2    |  1191 x 1684  |  1587x2245  |  2480x3508  |  4960 x 7016  |  */           
+/*    |  A3    |  842 x 1191   |  1123x1587  |  1754x2480  |  3508 x 4960  |  */
+/*    |  A4    |  595 x 842	   |  794x1123   |  1240x1754  |  2480 x 3508  |  */
+/*    |  A5    |  420 x 595	   |  559x794    |  874x1240   |  1748 x 2480  |  */
+/*    |        |               |             |             |               |  */
+/*    '--------'---------------'-------------'-------------'---------------'  */
 /*                                                                            */
 /******************************************************************************/
 /* Generic CSS Style For All                                                  */
 /******************************************************************************/
 body {
-	margin-top:0px;
-	margin-left:0px;
-	margin-right:0px;
-	max-width: 3508px;
-	max-width: 2480px;
+	background-color:#0071B6;
+  font-family:Roboto;
+	margin:0px;
+	max-width:1240px;
+	max-width:1754px;
 	overflow-x:hidden;
 	overflow-y:hidden;
+  width:100%;
+  max-width:100%;
+  min-width:100%;
+  height:100%;
+  max-height:100%;
+  min-height:100%;
 }
 
 /* As of Unicode 11 - html entity: &#127279; or &#x1f12f; */
 copyleft:before {
   content: "©";
 }
+
 copyleft {
   font-weight:100;
   opacity:0.7;
@@ -54,7 +62,6 @@ copyleft {
   display:inline-block;
   transform: rotate(180deg);
 }
-
 
 a {
 	text-decoration:none;
@@ -71,57 +78,58 @@ a:visited {
 }
 
 code {
-  filter: drop-shadow(0mm 2mm 2mm rgba(0, 0, 0, 0.2));
-  white-space: pre-wrap;
-  border: 2px solid #3399CC;
+  filter:drop-shadow(0mm 2mm 2mm rgba(0, 0, 0, 0.2));
+  white-space:pre-wrap;
+  border:2px solid #3399CC;
   border-radius:2px;
-  background: #f4f4f4;
-  border-top: 2px solid #ddd;
-  border-right: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
-  border-left: 8px solid #0092E6;
-  color: #666;
-  font-family: monospace;
-  font-size: 18px;
-  line-height: 1.6;
+  background:#F4F4F4;
+  border-top:2px solid #ddd;
+  border-right:2px solid #ddd;
+  border-bottom:2px solid #ddd;
+  border-left:8px solid #0092E6;
+  color:#666666;
+  font-family:monospace;
+  font-size:18px;
+  line-height:1.6;
   padding:0px 16px 6px 26px;
-  display: inline-table;
+  display:inline-table;
   width:100%;
 }
-
 
 /*****************************************************************************/
 /* Cover Styling                                                             */
 /*****************************************************************************/
 body#cover {
 	background-color:#3399CC;
-  font-family:Roboto;
 }
 
 /*****************************************************************************/
 /* Font Matter Styling                                                       */
 /*****************************************************************************/
-body#front-page {
+body#front-matter {
   background-color:#3399CC;
-  font-family:Roboto;
-
 }
 
-body#front-page > page#title {
-  
+body#front-matter > page#title {
 }
 
-body#front-page > page#title > organization {
-      margin-left:32%;margin-top:15%;float:left;z-index:999;color:#000;
-  font-size:64px;width:700px;color:#1B1725;margin-left:-150px;margin-top:-120px;margin-bottom:-50px
+body#front-matter > page#title > organization {
+  margin-left:32%;
+  margin-top:15%;
+  float:left;
+  z-index:999;
+  color:#000;
+  font-size:64px;
+  width:33.3%;
+  color:#1B1725;
+  margin-right:10%;
+  margin-bottom:10%;
 }
-
 
 /*****************************************************************************/
 /* Back Matter Styling                                                       */
 /*****************************************************************************/
-body#back-page {
-	background-color:#0071B6;
+body#back-matter {
 }
 
 /*****************************************************************************/
@@ -129,7 +137,6 @@ body#back-page {
 /*****************************************************************************/
 body#chapter-page {
 	background-color:#0071B6;
-  margin-top:0px;margin-left:0px;margin-right:0px;background-color:#3399CC;max-width:100%;overflow-x:hidden;overflow-y:hidden;
 }
 
 /*****************************************************************************/
@@ -146,7 +153,7 @@ body#content-page > main {
   text-align:justify;
   font-size:24px;
   line-height:44px;
-  padding: 32px 96px 64px 96px;
+  padding:32px 96px 64px 96px;
   min-height:1080px;
   max-height:3000px;
 }
@@ -159,7 +166,7 @@ body#content-page > header {
   background-color:#0071B6;
   text-align:right;
   filter: drop-shadow(0mm 2mm 2mm rgba(0, 0, 0, 0.2));
-  border-bottom: 10px solid #3399CC;
+  border-bottom:10px solid #3399CC;
 }
 
 body#content-page > header > info {
@@ -192,7 +199,6 @@ body#content-page > main > section > inline {
   height:25%;
   display:block;
 }
-
 
 body#content-page > main > section > inline.left:before{ 
   clear:float:left;
@@ -235,7 +241,6 @@ body#content-page > main > section > subheader > subtitle {
   font-size: 22px;
 	/*color:#8192A5; /* Light Slate Gray */
   color: #45524D;
-
 }
 
 body#content-page > main > section > subheader {
@@ -279,22 +284,28 @@ body#content-page > footer {
   width:100%; 
   border-top:2px solid #0071B6;
 }
+
 body#content-page > footer > info {
   width:33.3%;
   color:#0071B6;
-  padding: 32px 40px 24px 40px;
+  padding:32px 40px 24px 40px;
   font-size:24px;
   font-weight:100;
 }
+
 body#content-page > footer > info.document-type {
   float:left;
   text-align:left;
 }
+
 body#content-page > footer > info.document-location {
-  float:right;text-align:right;
+  float:right;
+  text-align:right;
 }
+
 body#content-page > footer > info > span.broad-info {
-  font-weight:600;padding-right:6px;
+  font-weight:600;
+  padding-right:6px;
 }
 
 /*****************************************************************************/
