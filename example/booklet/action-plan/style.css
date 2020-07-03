@@ -207,15 +207,6 @@ body#content-page > main > section > inline.right{
   float:right;
 }
 
-/*
-body#content-page > main > section > inline:after { 
-  content: "";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}*/
-
 body#content-page > main > section > subheader {
   filter: drop-shadow(0 4mm 2mm rgba(0, 0, 0, 0.2));
 }
@@ -237,8 +228,10 @@ body#content-page > main > section > subheader > subtitle {
 
 body#content-page > main > section > subheader {
 	border-bottom:3px solid #0071B6;
+  text-align:left;
 	font-weight:100;
 	color:#0071B6;
+  width:100%;
   float:left;
   margin-top:15px;
   margin-bottom:22px;
